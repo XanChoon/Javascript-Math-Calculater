@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Math Quiz</h2>
+
+<button onclick="myFunction()">Start</button>
+
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", "");
+	var personid = prompt("Please enter your student:", "");
+    if (person && personid == null || person && personid == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+		alert("Hello " + person + " " + personid + ""); {
+			if (confirm(person + " do you ready start the math quiz?")) {
+				x = parseInt(Math.floor((Math.random() * 10) + 1));
+				y = parseInt(Math.floor((Math.random() * 10) + 1));
+				z = parseInt(x) + parseInt(y); 
+				document.write("number 1 is " + x  + "</br>" + "number 2 is " + y + "</br>");
+				document.write(" This is answer " + z);
+				} else {
+				alert("Thank you and hope you will visit again");
+			}
+		}
+	}
+}
+</script>
+
+</body>
+</html>
